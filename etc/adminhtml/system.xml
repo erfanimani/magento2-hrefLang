@@ -17,6 +17,12 @@
                    <label>Same website only</label>
                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                </field>
+               <field id="exclude_website" translate="label" type="multiselect" showInDefault="1" canRestore="1"
+                      showInWebsite="1" showInStore="1">
+                   <label>Exclude websites</label>
+                   <source_model>BrunoCanada\HrefLang\Model\Config\Source\WebsitesList</source_model>
+                   <can_be_empty>1</can_be_empty>
+               </field>
            </group>
        </section>
    </system>
