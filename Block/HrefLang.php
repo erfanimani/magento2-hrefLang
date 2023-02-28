@@ -104,4 +104,15 @@ class HrefLang extends Template
         }
         return $stores;
     }
+
+    /**
+     * @return string
+     */
+    protected function _toHtml()
+    {
+        if (!$this->_scopeConfig->getValue('brunocanada_hreflang/general/enabled')) {
+            return '';
+        }
+        return parent::_toHtml();
+    }
 }
