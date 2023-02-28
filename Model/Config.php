@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BrunoCanada\HrefLang\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;

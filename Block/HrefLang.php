@@ -77,16 +77,15 @@ class HrefLang extends Template
         if ($config === null || $config === '1') {
             return $this->getSameWebsiteStores();
         }
-        else{
-            // Get array of website ids which should be excluded, if empty or not exist will return array with empty item, means no sites will be excluded
-            $excludeWebsitesArray = explode(',', $this->_scopeConfig->getValue('brunocanada_hreflang/general/exclude_website'));
 
-            // Filter stores according to excluded websites
-            $result = array_filter($this->_storeManager->getStores(), function($v, $k) use ($excludeWebsitesArray) {
-                return !in_array($v->getWebsiteId(), $excludeWebsitesArray, true);
-            }, ARRAY_FILTER_USE_BOTH);
-            return $result;
-        }
+        // Get array of website ids which should be excluded, if empty or not exist will return array with empty item, means no sites will be excluded
+        $excludeWebsitesArray = explode(',', $this->_scopeConfig->getValue('brunocanada_hreflang/general/exclude_website'));
+
+        // Filter stores according to excluded websites
+        $result = array_filter($this->_storeManager->getStores(), function($v, $k) use ($excludeWebsitesArray) {
+            return !in_array($v->getWebsiteId(), $excludeWebsitesArray, true);
+        }, ARRAY_FILTER_USE_BOTH);
+        return $result;
     }
 
     /**

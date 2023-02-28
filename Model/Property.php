@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BrunoCanada\HrefLang\Model;
 
 final class Property implements PropertyInterface

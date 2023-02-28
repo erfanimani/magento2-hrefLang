@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BrunoCanada\HrefLang\Model;
 
 class Adapter implements AdapterInterface

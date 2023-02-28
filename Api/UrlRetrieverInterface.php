@@ -1,4 +1,5 @@
 <?php
+
 namespace BrunoCanada\HrefLang\Api;
 
 use Magento\Store\Model\Store;
