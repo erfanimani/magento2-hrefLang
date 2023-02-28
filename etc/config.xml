@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+   <default>
+       <brunocanada_hreflang>
+           <general>
+               <same_website_only>1</same_website_only>
+           </general>
+       </brunocanada_hreflang>
+   </default>
+</config>
